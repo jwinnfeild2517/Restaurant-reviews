@@ -1,0 +1,26 @@
+<div class="callout large primary">
+  <div class="row column text-center">
+    <h1>Connect With Your Restaurant</h1>
+  </div>
+</div>
+
+
+
+
+<%@restaurants.each do |restaurant| %>
+  <ul>
+    <li>
+      <div class="blog-post">
+        <h3><%= link_to restaurant.name, restaurant%></h3>
+        <img class="thumbnail" src="https://www.decolore.net/wp-content/uploads/2017/06/restaurant-branding-psd-mockup-templates-cover-2.jpg" height="350px" width="850px">
+        <p><%= restaurant.description %></p>
+          <div class="callout">
+            <ul class="menu simple">
+              <li><%= link_to 'Reviews', restaurant%></li>
+              <li><a href="#">Comments: 3</a></li>
+            </ul>
+          </div>
+      </div>
+    </li>
+  </ul>
+<%end%>
