@@ -7,4 +7,6 @@ class Restaurant < ApplicationRecord
   validates :zip, presence: true
 
   has_many :reviews
+  has_many :categorizations
+  has_many :categories, through: :categorizations
 end
