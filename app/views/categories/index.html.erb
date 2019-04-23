@@ -1,0 +1,34 @@
+<div class="marketing-site-hero">
+  <div class="marketing-site-hero-content">
+    <h1>Choose a flavor</h1>
+    <p class="subheader">By Jenner Thomas</p>
+  </div>
+</div>
+<div class="promotion-hero">
+    <div class="promotion-hero-header">
+      <h1>50% off, Use code Jenner</h1>
+    </div>
+
+    <div class="promotion-hero-links">
+      <ul class="vertical menu promotion-hero-link-menu">
+        <% @categorie_set_1.each do |t| %>
+          <li><%= t.name %></li>
+        <% end%>
+      </ul>
+      <ul class="vertical menu promotion-hero-link-menu">
+        <% @categorie_set_2.each do |t| %>
+          <li><%= t.name %></li>
+        <% end%>
+      </ul>
+      <ul class="vertical menu promotion-hero-link-menu">
+        <% @categorie_set_3.each do |t| %>
+          <li><%= t.name %></li>
+        <% end%>
+      </ul>
+      <ul class="vertical menu promotion-hero-link-menu">
+        <% @categorie_set_4.each do |t| %>
+          <li><%= t.name %></li>
+        <% end%>
+      </ul>
+    </div>
+  </div>
