@@ -45,3 +45,76 @@ ul {
 .menu {
   color: black;
 }
+
+.marketing-site-hero {
+  background: url("https://previews.123rf.com/images/mcherevan/mcherevan1511/mcherevan151100350/48742378-beautiful-wooden-background-with-napkin-knife-and-fork-fine-background-for-the-menu-of-restaurants-a.jpg") top right no-repeat;
+  height: 60vh;
+  background-size: cover;
+  color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 40px;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: white;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero-content {
+    padding-left: 50%;
+  }
+}
+
+.promotion-hero {
+  background-image: url("https://placehold.it/150x500");
+  background-size: cover;
+  height: 400px;
+  padding: 3rem;
+}
+
+.promotion-hero-header h1 {
+  background-color: #fefefe;
+  width: auto;
+  padding: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.promotion-hero-links {
+  padding: 1rem;
+  background-color: #fefefe;
+  border: 2px solid #0a0a0a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
