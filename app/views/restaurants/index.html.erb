@@ -6,18 +6,17 @@
 
 
 
-
 <%@restaurants.each do |restaurant| %>
   <ul>
     <li>
       <div class="blog-post">
         <h3><%= link_to restaurant.name, restaurant%></h3>
-        <img class="thumbnail" src="https://www.decolore.net/wp-content/uploads/2017/06/restaurant-branding-psd-mockup-templates-cover-2.jpg" height="350px" width="850px">
+        <img class="thumbnail" src="<%= restaurant.image %>" height="350px" width="850px">
         <p><%= restaurant.description %></p>
           <div class="callout">
             <ul class="menu simple">
-              <li><%= link_to 'Reviews', restaurant%></li>
-              <li><a href="#">Comments: 3</a></li>
+              <li><%= link_to 'Add a Review', new_restaurant_review_path(restaurant)%></li>
+              <li class="number_of_reviews">Comments: <%= restaurant.reviews.length  %></li>
             </ul>
           </div>
       </div>

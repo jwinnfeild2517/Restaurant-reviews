@@ -1,1 +1,23 @@
+<div class="article-row-section">
+  <div class="article-row-section-inner">
+    <h2 class="article-row-section-header"><%= @category.name %></h2>
+    <%@restaurants.each do |restaurant| %>
+      <div>
+        <article class="article-row">
+          <div class="article-row-img">
+            <img src="<%= restaurant.image %>" alt="Restaurant image">
+          </div>
+          <div class="article-row-content">
+            <h1 class="article-row-content-header"><%= link_to restaurant.name, restaurant%></h1>
 
+            <p class="article-row-content-description"><%= restaurant.description  %></p>
+            <p class="article-row-content-description"><%= restaurant.address  %></p>
+            <p class="article-row-content-description"><%= restaurant.city  %>,
+            <%= restaurant.state %>, <%= restaurant.zip %></p>
+
+          </div>
+        </article>
+      </div>
+    <% end %>
+  </div>
+</div>

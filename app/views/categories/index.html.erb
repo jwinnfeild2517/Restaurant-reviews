@@ -5,29 +5,25 @@
   </div>
 </div>
 <div class="promotion-hero">
-    <div class="promotion-hero-header">
-      <h1>50% off, Use code Jenner</h1>
-    </div>
-
     <div class="promotion-hero-links">
       <ul class="vertical menu promotion-hero-link-menu">
-        <% @categorie_set_1.each do |t| %>
-          <li><%= t.name %></li>
+        <% @categorie_set_1.each do |category| %>
+          <li><%= link_to "#{category.name}", category%></li>
         <% end%>
       </ul>
       <ul class="vertical menu promotion-hero-link-menu">
-        <% @categorie_set_2.each do |t| %>
-          <li><%= t.name %></li>
+        <% @categorie_set_2.each do |category| %>
+          <li><%= link_to "#{category.name}", category%></li>
         <% end%>
       </ul>
       <ul class="vertical menu promotion-hero-link-menu">
-        <% @categorie_set_3.each do |t| %>
-          <li><%= t.name %></li>
+        <% @categorie_set_3.each do |category| %>
+          <li><%= link_to "#{category.name}", category%></li>
         <% end%>
       </ul>
       <ul class="vertical menu promotion-hero-link-menu">
-        <% @categorie_set_4.each do |t| %>
-          <li><%= t.name %></li>
+        <% @categorie_set_4.each do |category| %>
+          <li><%= link_to "#{category.name}", category%></li>
         <% end%>
       </ul>
     </div>

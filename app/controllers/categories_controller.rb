@@ -5,4 +5,9 @@ class CategoriesController < ApplicationController
     @categorie_set_3 = Category.limit(6).offset(8).order(:name)
     @categorie_set_4 = Category.limit(6).offset(9).order(:name)
   end
+
+  def show
+    @category = Category.find(params[:id])
+    @restaurants = @category.restaurants
+  end
 end
